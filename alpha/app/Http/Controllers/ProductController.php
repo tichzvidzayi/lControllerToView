@@ -15,11 +15,16 @@ class ProductController extends Controller
     }
 
     public function usingview(){
-        $x = [
+      /*  $x = [
             "name"=>"Lara",
             "age" => "23"
 
         ];
+
+        */
+         
+
+        $x = " Using the VIEW methos";
         return view('home', ['x'=>$x]);
     }
 
