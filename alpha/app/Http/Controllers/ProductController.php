@@ -5,13 +5,13 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
-        $name = "something";
-        return view('home', compact('name'));
+        $name = "Using COMPACT method..";
+        return view('home', compact('x'));
     }
 
     public function usingwith(){
-        $name = "alien";
-        return view('home')->with('name', $name);
+        $name = "Using WITH method";
+        return view('home')->with('x', $name);
     }
 
     public function usingview(){
@@ -20,7 +20,7 @@ class ProductController extends Controller
             "age" => "23"
 
         ];
-        return view('home', ["data"=>$data]);
+        return view('home', ['x'=>$data]);
     }
 
 }
