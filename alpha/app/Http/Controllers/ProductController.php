@@ -22,8 +22,8 @@ class ProductController extends Controller
         ];
 
         */
-         
-
+        
+        //
         $x = " Using the VIEW methos";
         return view('home', ['x'=>$x]);
     }
